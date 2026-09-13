@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
+const cors = require('cors');
 const genre = require('./routes/genre.js'); // Use require for CommonJS modules
 const info = require('./routes/info.js');
 const app = require('./routes/app.js');
