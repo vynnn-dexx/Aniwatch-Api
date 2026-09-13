@@ -16,6 +16,9 @@ const src = require('./routes/src1.js');
 const inde = express();
 const port = 3005;
 
+// <-- 2. Pasang ini SEBELUM route /api dipanggil
+inde.use(cors());
+
 
 try {
     inde.use('/api', genre);
